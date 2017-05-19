@@ -1,11 +1,10 @@
-// import promise from './promise';
-
 import { h, render, Component } from 'preact';
+import RepoList from './components/repolist/repolist';
+
 
 class Clock extends Component {
     render() {
-        let time = new Date().toLocaleTimeString();
-        return <span>{ time }</span>;
+        return <RepoList />;
     }
 }
 
